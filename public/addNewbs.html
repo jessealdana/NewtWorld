@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newt Newbs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="myNewtStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Newt Newbs</h1>
+      <h3 id="assemble">Newts, Assemble!</h3>
+      <hr>
+      <!-- <a href="/api/newts"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Newts</button></a> -->
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">
+            <h3><strong>Lengthen the List or Lose the Laggards</strong></h3>
+          </div>
+          <div class="newts">
+            <form id="newb-form" method="POST">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name a Newt Newb" name="name" id="name" />
+            </form>
+            <br>
+            <p>Number of Newbs: <span id="newb-count">0</span></p>
+            <ul id="newb-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./newt.js"></script>
+
+</body>
+</html>
