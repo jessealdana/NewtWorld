@@ -168,6 +168,10 @@ img {
     height: auto;
 }
 
+.card-body {
+    height: 425px;
+}
+
 .containerTwo {
     position: relative;
     display: none;
@@ -201,6 +205,7 @@ img {
     height: auto;
     text-align: center;
     padding-top: 5px;
+    margin-top: 10px;
 }
 
 .btnThree {
