@@ -1,0 +1,19 @@
+<li>
+			<p>
+				Name: {{newt_name}} 
+			</p>
+			<p2>
+				Role: {{newt_role}}
+			</p2>
+			<p>
+				Age: {{newt_age}} 
+			</p>
+			<p2>
+				XP: {{newt_xp}}
+			</p2>
+	<button class="change-level" data-id="{{id}}" data-newLevel="{{newb}}">
+		{{#if newb}}Hire That Lizard!{{else}}Back to the Beginning, Newb!{{/if}}
+	</button>
+
+	<button class="delete-newt" data-id="{{this.id}}">Kick That Newt!</button>
+</li>

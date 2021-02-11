@@ -1,0 +1,68 @@
+<body>
+
+<h1>Newt Squad</h1>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Newbs.</h2>
+      <ul>
+        {{#each newts}}
+            
+              {{#unless newb}}
+                {{> newts/newt-block newb=true}}
+              {{/unless}}
+
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-sm-6">
+      <h2>Masters.</h2>
+      <ul>
+        {{#each newts}} 
+
+              {{#if newb}}
+                {{> newts/newt-block newb=false}}
+              {{/if}}
+
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container2">
+  <div class="row">
+    <div class="col-sm-12">
+<h3>Name a Newt</h3>
+<br>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ne">Newt Name:</label>
+    <input type="text" id="ne" name="newt_name">
+    <label for="ro">Newt Role:</label>
+    <input type="text" id="ro" name="newt_role">
+    <label for="ag">Newt Age:</label>
+    <input type="text" id="ag" name="newt_age">
+    <label for="xp">Newt XP:</label>
+    <input type="text" id="xp" name="newt_xp">
+  </div>
+
+  <div class="form-group">
+    <label for="new">Newb?</label><br>
+    <input type="radio" name="newb" value="0" checked> Newb!<br>
+    <input type="radio" name="newb" value="1" > Master!
+  </div>
+
+  <button type="submit">Add Newt</button>
+</form>
+    </div>
+  </div>
+</div>
+
+</body>
