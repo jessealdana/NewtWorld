@@ -18,7 +18,9 @@
     "express-handlebars": "^4.0.4",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "handlebars": ">=4.7.7"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
